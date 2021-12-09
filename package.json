@@ -8,7 +8,7 @@
 		"server": "nodemon server.js"
 	
 	},
-	"author": "Shruti Panjwani",
+	"author": "samer lhiany",
 	"license": "ISC",
 	"dependencies": {
 		"bcryptjs": "^2.4.3",
