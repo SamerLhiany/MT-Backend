@@ -12,7 +12,6 @@ const app = express();
 
 connectDB();
 
-const PORT = process.env.PORT || 5001;
 
 app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 
@@ -32,4 +31,4 @@ if (process.env.NODE_ENV === 'production') {
 		res.sendFile(path.resolve(__dirname, 'mern-auth', 'build', 'index.html'));
 	});
 }
-app.listen(PORT, () => console.log(`Server running mode on port ${PORT}`));
+app.listen( process.env.PORT || 5001, () => console.log(`Server running mode on port `));
