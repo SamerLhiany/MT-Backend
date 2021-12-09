@@ -23,12 +23,12 @@ app.use(bodyParser.json());
 app.use('/users', require('./routes/auth'));
 
 // Serve static assets in production
-if (process.env.NODE_ENV === 'production') {
-	// Set Static Folder
-	app.use(express.static('mern-auth/build'));
+// if (process.env.NODE_ENV === 'production') {
+// 	// Set Static Folder
+// 	app.use(express.static('mern-auth/build'));
 
-	app.get('*', (req, res) => {
-		res.sendFile(path.resolve(__dirname, 'mern-auth', 'build', 'index.html'));
-	});
-}
+// 	app.get('*', (req, res) => {
+// 		res.sendFile(path.resolve(__dirname, 'mern-auth', 'build', 'index.html'));
+// 	});
+// }
 app.listen( process.env.PORT || 5001, () => console.log(`Server running mode on port `));
