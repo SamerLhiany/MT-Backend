@@ -5,8 +5,8 @@
 	"main": "server.js",
 	"scripts": {
 		"start": "node server.js",
-		"server": "node server.js"
-	
+		"server": "node server.js",
+		"dev":"concurrently\"npm run server\""
 	},
 	"author": "samer lhiany",
 	"license": "ISC",
