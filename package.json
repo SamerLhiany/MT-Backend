@@ -5,10 +5,8 @@
 	"main": "index.js",
 	"scripts": {
 		"start": "node server.js",
-		"server": "nodemon server.js",
-		"client": "npm start --prefix ",
-		"dev": "concurrently \"npm run server\" \"npm run client\"",
-		"heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix mern-auth && npm run build --prefix mern-auth"
+		"server": "nodemon server.js"
+	
 	},
 	"author": "Shruti Panjwani",
 	"license": "ISC",
